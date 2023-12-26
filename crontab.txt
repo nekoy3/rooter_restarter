@@ -1,0 +1,4 @@
+#設定例　毎時間再起動する
+
+@reboot cd ~/dev_python; python3 main.py
+0 * * * * cd ~/dev_python; python3 main.py
