@@ -1,0 +1,11 @@
+ドメイン名
+ゾーンID
+レコードID
+メルアド
+APIトークン
+
+domain
+zone_id
+record_id
+mail
+api_token
