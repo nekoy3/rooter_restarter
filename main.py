@@ -41,7 +41,7 @@ else:
 driver.quit()
 
 #ルーター再起動した後pingで接続確認を2分間行う
-f.write(log("process sleeping..."))
+f.write(log("waiting connection..."))
 time.sleep(5)
 for i in range(115):
     r = subprocess.run(["ping", "8.8.8.8", "-c", "2", "-w", "300"], stdout=subprocess.PIPE)
@@ -66,3 +66,5 @@ f.close()
 i = open('ip_addr.txt', 'w')
 i.write(addr)
 i.close()
+
+import cloudflare_record_set
